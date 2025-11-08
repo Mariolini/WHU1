@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for nur in newuserrequest_list %}
+    <div class="nur-info">
+        <h2><a href="{{nur.get_absolute_url}}"> {{ nur.get_title }}</a></h2>
+        <p>{{ nur.get_info }}</p>
+    </div>
+{% endfor %}
+{% endblock content %}
