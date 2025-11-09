@@ -4,7 +4,8 @@
     </head>
     <body>
         <header>
-            <h1><a href="{% url 'NURList' %}">Requestliste</a></h1>
+            <h1><a href="{% url 'NURList' %}">Requestlist</a></h1>
+            <a href= "{% url 'NURnew' %}">Create New User Request</a> 
         </header>
         <div>
             {% block content %}

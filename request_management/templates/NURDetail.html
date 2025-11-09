@@ -5,4 +5,7 @@
     <h2>{{ newuserrequest.get_title }}</h2>
     <p>{{ newuserrequest.get_info}}</p>
 </div>
+<a href="{% url 'NURedit' newuserrequest.pk %} ">Edit New User Request</a>
+<a href="{% url 'NURdelete' newuserrequest.pk %}">Delete New User Request</a>
 {% endblock content %}
+
